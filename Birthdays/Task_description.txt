@@ -1,0 +1,43 @@
+Task Overview:
+Marko, Alaa Aldin, and Damir want to find out how many days separate the oldest and youngest
+among them based on their birthdates. Your job is to write a program that calculates this gap.
+
+
+Requirements:
+
+Implement a Date class with:
+
+A constructor Date(int d, int m, int y) to initialize a date.
+
+A bool isValid() method to check if a date is valid:
+
+April, June, September, and November have 30 days.
+
+January, March, May, July, August, October, and December have 31 days.
+
+February has 28 days or 29 days if the year is a leap year (divisible by 4, but years divisible
+by 100 must also be divisible by 400 to count as leap years).
+
+Overload the - operator to compute the number of days between two dates.
+
+Use a global comparator function with std::sort() to order the three dates from earliest to latest.
+
+Main function is provided and must be used exactly as given (it creates three Date objects,
+checks their validity, sorts them, and prints the day difference).
+
+
+Input Format:
+
+Three lines, each containing three integers: day, month, and year, for three different dates.
+
+
+Output Format:
+
+If any date is invalid, print Invalid Input.
+
+Otherwise, output the number of days between the earliest and latest dates.
+
+
+Constraints:
+
+Inputs are valid integers; no additional input validation is needed beyond date correctness.

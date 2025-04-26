@@ -1,0 +1,41 @@
+Task Overview:
+Ahmed and Karim are playing a card duel, where each card has a positive digit (1–9) written on it.
+Each player organizes their cards in a chosen order, and based on the sequences, you (the judge) must determine
+the winner by following specific rules.
+
+
+Game Rules:
+
+Cards are compared from left to right.
+
+If the same number appears in both players’ collections, the first occurrence from each player is matched in a "duel."
+
+If Ahmed's card appears earlier, he earns a point; if Karim’s appears earlier, he earns a point; if they appear at the
+same position, no points are awarded.
+
+Once a card participates in a duel, it is considered "used" and cannot be reused.
+
+
+Input Format:
+
+Two lines of card numbers, ending with a 0 on each line.
+
+The first line is Ahmed's card sequence, the second is Karim's.
+
+The input is always valid.
+
+
+Output Format:
+
+First line: Ahmed’s winning cards (in the input order) or - if none.
+
+Second line: Karim’s winning cards (in the input order) or - if none.
+
+Third line: The winner's name (Ahmed / Karim) or Tie if scores are equal.
+
+
+Constraints:
+
+1 ≤ N, M ≤ 999
+
+1 ≤ X ≤ 9

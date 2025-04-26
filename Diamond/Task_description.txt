@@ -1,0 +1,71 @@
+Task Overview: You need to implement a class hierarchy involving four related classes:
+Person, Student, Employee, and TA. The classes will use inheritance and polymorphism
+to manage a simple organizational structure, with the TA class demonstrating multiple inheritance.
+
+Class Details:
+
+Person Class (Base Class):
+
+Contains fname (first name) and lname (last name) as instance members.
+
+A class member total personnel count to track how many people have been created.
+
+A constructor to initialize fname, lname, and increment the personnel count.
+
+A pure virtual function getEmail() that needs to be implemented by derived classes.
+
+A virtual destructor and a deleted copy constructor.
+
+Student and Employee Classes (Intermediate Classes):
+
+Both classes inherit from Person and use the base class constructor for initialization.
+
+Each overrides the getEmail() function:
+
+Student: email format should be fname[0].lname@students.org.
+
+Employee: email format should be fname[0].lname@employees.org.
+
+All email addresses must be lowercase.
+
+TA Class (Derived Class):
+
+Inherits from both Student and Employee (demonstrates multiple inheritance).
+
+TA is counted as a single person and gets an Employee-formatted email address.
+
+
+Functionality:
+
+The program must ensure proper inheritance relationships and polymorphism.
+
+The main() function requires that you implement this hierarchy and generate the corresponding email addresses.
+
+
+Constraints:
+
+Static assertions will ensure the class relationships and properties are correctly implemented.
+
+Modifications to the main function should be avoided as they will result in a penalty.
+
+
+Input Format:
+
+Three lines of input:
+
+The first line contains the Student's first and last name.
+
+The second line contains the Employee's first and last name.
+
+The third line contains the TA's first and last name.
+
+
+Output Format:
+
+Three lines of output with the generated email addresses:
+
+First line: Email of the Student.
+
+Second line: Email of the Employee.
+
+Third line: Email of the TA.
