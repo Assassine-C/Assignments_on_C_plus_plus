@@ -1,0 +1,65 @@
+Task Overview: Imagine a substance that can transform an animal into a "better" version of itself,
+making it live a shorter number of days. The task involves simulating the application and removal
+of this substance on various animals, as well as managing their life cycles and interactions within
+specific containers. The animals can attack each other, but the containers also have restrictions
+and behaviors based on the animal type.
+
+
+Classes and Structure:
+
+
+Animal Types:
+
+Animals start as one of these types: Mouse, Fish, or Bird. When the substance is applied, these
+animals transform into their "better" versions: BetterMouse, BetterFish, or BetterBird. If the
+substance is overused, they become Monsters, which can no longer transform back and will die after one day.
+
+
+Containers:
+
+Cage: For storing animals like Mice or Birds.
+
+Aquarium: For Fish and their better versions.
+
+Freedom: A special container where animals can’t be affected by the substance and can’t interact with others.
+
+
+Animal Life Cycle:
+
+Each animal has a daysLived count (maximum of 10). After the substance is applied, the number of days lived
+is halved (rounded up). If the animal reaches 11 days, it dies.
+
+
+Interactions:
+
+Animals in the same container can attack each other. The attacker kills the attacked animal.
+
+Animals can talk and introduce themselves, sharing their name and days lived.
+
+The substance can only be applied or removed in specific containers, and only animals in the "better" states can have the substance removed.
+
+
+Commands to be Implemented:
+
+CREATE <TYPE> <NAME> IN <CONTAINER> <N> – Create an animal with a specified type and number of days lived, and place it in the container.
+
+APPLY_SUBSTANCE <CONTAINER> <TYPE> <POS> – Apply the substance to an animal at a given position in the container.
+
+REMOVE_SUBSTANCE <CONTAINER> <TYPE> <POS> – Remove the substance from a "better" animal.
+
+ATTACK <CONTAINER> <TYPE> <POS1> <POS2> – Animal at position POS1 attacks animal at POS2.
+
+TALK <CONTAINER> <TYPE> <POS> – Animal talks, sharing its name and days lived.
+
+PERIOD – Increase the age of all animals by one day. If an animal reaches the limit (11 days), it dies.
+
+
+Behavior Rules:
+
+Animals in the Freedom container cannot attack, and no substances can be applied or removed from them.
+
+Applying the substance to a "better" animal turns it into a Monster with 1 day of life, which cannot revert back.
+
+Monsters kill all animals in the container when they appear and are moved to the Freedom container.
+
+The containers should automatically reorder animals based on their daysLived after any action.
