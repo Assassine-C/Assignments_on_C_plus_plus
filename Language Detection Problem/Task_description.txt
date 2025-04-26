@@ -1,0 +1,39 @@
+Task Overview: You are provided with multiple languages, each containing a set of unique words.
+Your goal is to determine which language(s) a given sentence most closely aligns with based on
+the words it contains. Specifically, you need to find the language(s) that have the most words
+in common with the sentence, and return their index (starting from 1). If multiple languages have
+the same number of matching words, output all of them in ascending order.
+
+Problem Details:
+You are given N languages, and each language has a list of words.
+
+You also receive a sentence consisting of multiple words.
+
+The task is to find the language(s) that share the most words with the sentence, and print their indices (starting from 1).
+
+If multiple languages have the same number of shared words, you should output all their indices.
+
+Constraints:
+The number of languages N will be between 1 and 15.
+
+Each language contains Li words (where 1 ≤ Li ≤ 100).
+
+The sentence has M words (where 1 ≤ M ≤ 1000).
+
+Every word in the sentence and in the languages consists of English alphabet characters and may also include digits.
+
+It's guaranteed that the sentence contains at least one word from at least one language.
+
+Input Format:
+The first line contains an integer N: the number of languages.
+
+The next N lines describe the words in each language. Each line starts with an integer Li (the number of words in the i-th language),
+followed by Li space-separated words.
+
+The next line contains an integer M: the number of words in the sentence.
+
+The last line contains the sentence itself: M space-separated words.
+
+Output Format:
+For the given sentence, output the index (starting from 1) of the language(s) that have the most words in common with the sentence.
+If multiple languages have the same number of matching words, output all the indices in ascending order.

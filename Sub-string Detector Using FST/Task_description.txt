@@ -1,0 +1,26 @@
+Task Overview: You are given a substring C and a string S, both containing only lowercase letters.
+Your task is to use a Finite State Transducer (FST) to detect the number of times C appears as a
+substring in S. If the substring C is not found, output NOT DETECTED.
+
+Problem Details:
+You need to implement a Finite State Transducer (FST) to solve the problem.
+
+The FST should process the characters of the string S and detect when C appears in it.
+
+Your implementation should count how many times the substring C appears in S.
+
+If C is not found in S, print "NOT DETECTED".
+
+Requirements:
+You should implement a class named lastname_firstname_FST (replace lastname and firstname with your actual last and first names).
+
+The class should have a constructor that takes the substring C as a parameter.
+
+The class should also have a function process(char) that processes each character from the string S,
+updating the state and returning 1 or 0 based on whether the substring C is detected.
+
+FST Logic:
+The constructor should initialize the substring and the initial state of the FST.
+
+The process(char) function should update the state based on the input character and the substring,
+and return either 1 (detected) or 0 (not detected).
